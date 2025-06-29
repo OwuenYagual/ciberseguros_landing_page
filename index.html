@@ -34,7 +34,7 @@
     <main class="main" id="top">
       <div class="content">
         <nav class="navbar navbar-expand-md fixed-top" id="navbar" data-navbar-soft-on-scroll="data-navbar-soft-on-scroll">
-          <div class="container-fluid px-0"><a href="/"><img class="navbar-brand w-75 d-md-none" src="assets/img/Hero/logo.jpg" alt="logo" /></a><a class="navbar-brand fw-bold d-none d-md-block" href="/">Ciberseguros</a><a class="btn btn-primary btn-sm ms-md-x1 mt-lg-0 order-md-1 ms-auto" href="#form">Probar Gratis</a><button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="container-fluid px-0"><a href="/"><img class="navbar-brand w-75 d-md-none" src="assets/img/Hero/logo.jpg" alt="logo" /></a><a class="navbar-brand fw-bold d-none d-md-block" href="/">Ciberseguros</a><a class="btn btn-primary btn-sm ms-md-x1 mt-lg-0 order-md-1 ms-auto" href="#suscribir">Probar Gratis</a><button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-md-end" id="navbar-content" data-navbar-collapse="data-navbar-collapse">
               <ul class="navbar-nav gap-md-2 gap-lg-3 pt-x1 pb-1 pt-md-0 pb-md-0" data-navbar-nav="data-navbar-nav">
                 <li class="nav-item"> <a class="nav-link lh-xl" href="#home">Inicio</a></li>
@@ -181,7 +181,7 @@
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-12">
-                  <div class="position-relative z-1 text-center mb-8 mb-lg-9 video-player-paused" data-video-player-container="data-video-player-container"><video class="w-100 h-100 rounded-4" src="assets/video/Tech_video.mp4" poster="assets/img/Hero/experiences.webp" type="video/mp4" data-video-player="data-video-player"></video>
+                  <div class="position-relative z-1 text-center mb-8 mb-lg-9 video-player-paused" data-video-player-container="data-video-player-container"><video class="w-100 h-100 rounded-4" src="assets/video/Tech_video.mp4" type="video/mp4" data-video-player="data-video-player"></video>
                     <div class="overlay position-absolute top-0 bottom-0 start-0 end-0 rounded-4 bg-1100 object-cover" data-overlay="data-overlay"> </div><button class="btn play-button position-absolute justify-content-center align-items-center bg-white rounded-circle cursor-pointer" data-play-button="data-play-button"> <img class="play-icon w-25" src="assets/img/illustrations/play-solid.svg" alt="" data-play-icon="data-play-icon" /><img class="pause-icon w-25" src="assets/img/illustrations/pause-solid.svg" alt="" data-pause-icon="data-pause-icon" /></button>
                     <div class="position-absolute dots d-none d-sm-block"><img class="img-fluid w-100" src="assets/img/illustrations/Dots.webp" alt="" /></div>
                   </div>
@@ -417,7 +417,7 @@
               </div>
             </div>
           </section>
-          <section class="bg-300 position-relative z-0", id="form">
+          <section class="bg-300 position-relative z-0" id="suscribir">
             <div class="container py-8 py-lg-9">
               <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-8">
@@ -427,9 +427,9 @@
                       <p class="fs-8 mb-5 mb-lg-6 text-center lh-lg fw-normal"> Suscríbete para recibir noticias sobre el lanzamiento del simulador, consejos exclusivos para protegerte de estafas digitales y códigos promocionales especiales por ser parte de los primeros en unirte.</p>
                     </div>
                     <div class="col-10 col-lg-7">
-                      <form method="POST" onsubmit="return false;">
-                        <div class="mb-2 w-100"><input class="form-control email-input" id="email" type="email" placeholder="Ingresa tu correo electronico" required="required" /></div>
-                        <div class="d-grid"><button class="btn btn-lg btn-primary lh-xl mb-x1" type="submit"> ¡Subscribete! </button></div>
+                      <form id="form">
+                        <div class="mb-2 w-100"><input class="form-control email-input" id="email" name="email" type="email" placeholder="Ingresa tu correo electronico" required="required" /></div>
+                        <div class="d-grid"><button class="btn btn-lg btn-primary lh-xl mb-x1" type="submit"> ¡Suscribete! </button></div>
                       </form>
                     </div>
                     <div class="col-10 col-lg-7">
@@ -500,7 +500,8 @@
     <script src="vendors/countup/countUp.umd.js"></script>
     <script src="vendors/swiper/swiper-bundle.min.js"></script>
     <script src="vendors/lodash/lodash.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script> -->
+     <script src="assets/js/main.js"></script>
     <script src="assets/js/theme.js"></script>
   </body>
 
